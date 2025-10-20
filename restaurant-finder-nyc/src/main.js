@@ -2,7 +2,7 @@ import './style.css'
 
 // Define the model and base URL
 const MODEL_NAME = 'gemini-2.5-flash-preview-09-2025'
-const API_KEY = 'AIzaSyAhXnumMirYkBj8RqdxW843hUiqoVKMtTc'
+const API_KEY = import.meta.env.VITE_API_KEY || ''
 const API_BASE_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`
 
 // System instruction guiding the model's behavior
